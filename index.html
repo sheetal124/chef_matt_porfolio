@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/dist/output.css">
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+    <title>Chef Matt</title>
+</head>
+
+<body>
+
+    <!-- hero section -->
+    <section class="relative bg-center bg-cover h-screen">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="h-screen" src="assets/images/hero-image.png" alt="hero-img">
+                </div>
+                <div class="swiper-slide"><img class="h-screen" src="assets/images/hero-image.png" alt="hero-img"></div>
+                <div class="swiper-slide"><img class="h-screen" src="assets/images/hero-image.png" alt="hero-img"></div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <aside class="absolute top-0 z-10 flex flex-col h-full border-r-4 border-primary py-6 bg-black bg-opacity-60">
+            <!-- menu bar to toggle sidebar -->
+            <input type="checkbox" id="toggleSidebar" class="hidden">
+            <!-- menu icon -->
+            <label for="toggleSidebar" class="justify-center cursor-pointer text-white menu-open"><span
+                    class="fa fa-bars fa-lg"></span></label>
+            <!-- close icon -->
+            <label for="toggleSidebar" class="menu-close cursor-pointer"><span
+                    class="fa fa-close fa-lg text-white ml-8"></span></label>
+            <!-- collapsed menu -->
+            <div id="collapsedMenu" class="items-center justify-center w-28 h-full">
+                <figure class="w-20 md:w-36">
+                    <img src="assets/images/chef_signature.png" alt="Brand Logo">
+                </figure>
+            </div>
+            <!-- expanded menu -->
+            <div id="expandedMenu" class="flex-col w-80 h-full">
+                <figure class="my-8 ml-2">
+                    <img src="assets/images/chef_signature_horizontal.png" class="w-52" alt="Logo">
+                </figure>
+                <ul class="flex-grow text-white uppercase ml-8">
+                    <li class="nav-item mb-6 hover:text-primary">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item mb-6 hover:text-primary">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="nav-item mb-6 hover:text-primary">
+                        <a href="#">Meet chef matt</a>
+                    </li>
+                    <li class="nav-item mb-6 hover:text-primary">
+                        <a href="#">Faq</a>
+                    </li>
+                    <li class="nav-item mb-6 hover:text-primary">
+                        <a href="#">Connect with us</a>
+                    </li>
+                </ul>
+                <footer>
+                    <div class="border-b-2 text-white text-sm text-center pb-3">TEXT SUPPORT 24/7 <span
+                            class="text-primary ml-2 underline">
+                            070-7782-9137</span></div>
+                    <div class="flex justify-between mt-3 mx-10 text-white">
+                        <div class="text-sm">
+                            <span class="fa fa-shopping-bag mr-1"></span>
+                            <span>CART</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="fa fa-heart-o mr-1"></span>
+                            <span>WISHLIST</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </aside>
+        <!-- see details of chef -->
+        <div class="hidden md:block absolute bottom-28 z-10 left-1/2 -translate-x-2/4 lg:mb-22">
+            <button class="px-4 md:px-8 py-2 lg:px-12 lg:py-2.5 border border-white text-white capitalize">Meet chef
+                matt</button>
+        </div>
+    </section>
+    <!-- products section -->
+    <section class="lg:pl-16 lg:px-16 px-2 md:px-8 relative py-16 md:py-24 lg:py-36 lg:ml-28">
+        <figure class="leaves-img-wrapper absolute -top-7 hidden lg:block">
+            <img src="assets/images/leaves.png" alt="Leaves">
+        </figure>
+        <header class="mb-6 md:mt-2 md:ml-16">
+            <h3 class="text-primary text-xl md:text-3xl mb-2">CHEF MATT PRODUCTS</h3>
+            <hr class="border-b-2 border-primary w-1/4" />
+            <h6 class="text-white my-5">Shop Gourmet Chef Quality products from the Chef Matt brand.<br />
+                Chef it yourself and Thank us later.</h6>
+        </header>
+        <!-- products wrapper -->
+        <div class="swiper product-swiper px-8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
+                        <div class="text-center">
+                            <figure>
+                                <img src="assets/images/product_1.png" class="w-64 mx-auto" alt="product 1">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">CINNAMON HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_2.png" class="w-64 mx-auto" alt="product 2">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">COCONUT OIL</h6>
+                                <div class="text-white"><span class="line-through mr-2">$20.00 </span>
+                                    <span>$15.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_3.png" class="w-64 mx-auto" alt="product 3">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">MANGO HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$9.00 </span>
+                                    <span> $6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_4.png" class="w-64 mx-auto" alt="product 4">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">HONEY HABANERO</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+                        <div class="text-center">
+                            <figure>
+                                <img src="assets/images/product_1.png" class="w-64 mx-auto" alt="product 1">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">CINNAMON HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_2.png" class="w-64 mx-auto" alt="product 2">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">COCONUT OIL</h6>
+                                <div class="text-white"><span class="line-through mr-2">$20.00 </span>
+                                    <span>$15.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_3.png" class="w-64 mx-auto" alt="product 3">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">MANGO HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$9.00 </span>
+                                    <span> $6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_4.png" class="w-64 mx-auto" alt="product 4">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">HONEY HABANERO</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+                        <div class="text-center">
+                            <figure>
+                                <img src="assets/images/product_1.png" class="w-64 mx-auto" alt="product 1">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">CINNAMON HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_2.png" class="w-64 mx-auto" alt="product 2">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">COCONUT OIL</h6>
+                                <div class="text-white"><span class="line-through mr-2">$20.00 </span>
+                                    <span>$15.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_3.png" class="w-64 mx-auto" alt="product 3">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">MANGO HONEY</h6>
+                                <div class="text-white"><span class="line-through mr-2">$9.00 </span>
+                                    <span> $6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <figure class="text-center">
+                                <img src="assets/images/product_4.png" class="w-64 mx-auto" alt="product 4">
+                            </figure>
+                            <div>
+                                <h6 class="text-primary">HONEY HABANERO</h6>
+                                <div class="text-white"><span class="line-through mr-2">$12.00</span>
+                                    <span>$9.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+    </section>
+    <!-- new offers section -->
+    <section class="offers-section flex justify-center items-center lg:ml-28">
+        <!-- offer content -->
+        <div class="flex flex-col items-center">
+            <h3 class="text-2xl mb-2">ONLINE ONLY</h3>
+            <hr class="border-b-2 border-black w-16">
+            <p class="my-4 text-center">GET 20% OFF YOUR ORDER OF $50 OR MORE<br>
+                Use code <b>“Chef20”</b> </p>
+            <div>
+                <button class="px-20 py-2.5 border-2 border-black font-medium">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- features section -->
+    <section class="lg:ml-28 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <figure>
+                <img src="assets/images/feature_1.png" class="w-full" alt="subscribe and save">
+            </figure>
+            <figure>
+                <img src="assets/images/feature_2.png" class="w-full" alt="meet the chef">
+            </figure>
+            <figure>
+                <img src="assets/images/feature_3.png" class="w-full" alt="recipes">
+            </figure>
+            <figure>
+                <img src="assets/images/feature_4.png" class="w-full" alt="join live">
+            </figure>
+        </div>
+    </section>
+    <!-- sign-up section -->
+    <section class="sign-up-section md:pl-20 px-6 flex items-center md:items-end lg:ml-28">
+        <div class="text-white md:mb-20">
+            <h3 class="text-lg sm:text-xl lg:text-2xl mb-1">SIGN UP SPECIAL PROMOTIONS</h3>
+            <hr class="border-b-2 border-white w-64 sm:w-80 lg:w-96">
+            <p class="my-5">Get exclusive deals you won’t find anywhere else straight to your inbox!</p>
+            <form class="flex flex-col sm:flex-row">
+                <input type="text" class="h-11 bg-white border bg-opacity-20 w-full sm:w-52 md:w-80 px-2"
+                    placeholder="Enter email address">
+                <button class="px-4 py-2.5 bg-primary ml-0 mt-3 sm:mt-0 sm:ml-2 md:ml-4">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="lg:ml-28">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-12 px-6">
+            <div class="flex mb-8 lg:mb-0">
+                <span class="fa fa-trash text-primary fa-lg mt-1"></span>
+                <div class="ml-2">
+                    <h6 class="text-primary">FREE SHIPPING WORLDWIDE</h6>
+                    <small class="text-white">Guaranteed Delivery</small>
+                </div>
+            </div>
+            <div class="flex mb-8 lg:mb-0">
+                <span class="fa fa-headphones text-primary fa-lg mt-1"></span>
+                <div class="ml-2">
+                    <h6 class="text-primary">24/7 CUSTOMER SERVICE</h6>
+                    <small class="text-white">Text Us 24/7 at 070-7782-9137</small>
+                </div>
+            </div>
+            <div class="flex mb-8 lg:mb-0">
+                <span class="fa fa-check-circle-o text-primary fa-lg mt-1"></span>
+                <div class="ml-2">
+                    <h6 class="text-primary">QUALITY GUARANTEE!</h6>
+                    <small class="text-white">Send Within 30 Days</small>
+                </div>
+            </div>
+        </div>
+        <div class="w-full border-primary border-2"></div>
+        <!-- footer bottom -->
+        <figure class="flex justify-center mt-4">
+            <img src="assets/images/chef_signature_horizontal.png" class="w-80" alt="signature logo">
+        </figure>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

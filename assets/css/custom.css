@@ -1,0 +1,90 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #130F0C;
+}
+
+
+
+/* section  styles*/
+
+.offers-section {
+    background-image: url("../../images/offer_image.png");
+    background-color: white;
+    height: 366px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sign-up-section {
+    background-image: url("../../images/sign_up_bg.png");
+    height: 400px;
+}
+
+/* toggle sidebar styles */
+
+#expandedMenu,
+.menu-close {
+    display: none;
+}
+
+#collapsedMenu,
+.menu-open {
+    display: flex;
+}
+
+#toggleSidebar:checked~#expandedMenu,
+#toggleSidebar:checked~.menu-close {
+    display: flex;
+}
+
+#toggleSidebar:checked~#collapsedMenu,
+#toggleSidebar:checked~.menu-open {
+    display: none;
+}
+
+/*section styles */
+.leaves-img-wrapper {
+    z-index: -1;
+}
+
+/* swiper styles */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 550px) {
+    .offers-section {
+        background-image: none;
+    }
+}
